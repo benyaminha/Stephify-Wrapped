@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "motion/react";
 import { ChevronRight, ChevronLeft } from "lucide-react";
 import { ArtistAudioSlide } from "./ArtistAudioSlide";
 import { ArtistCameoSlide } from "./ArtistCameoSlide";
+import { VideoSlide } from "./VideoSlide";
 import { BoardGameSlide } from "./BoardGameSlide";
 import { WingspanCardSlide } from "./WingspanCardSlide";
 import { TiktokSlide } from "./TiktokSlide";
@@ -466,7 +467,7 @@ function StolenItemsComponent() {
 }
 
 const stats = {
-  lateNights: 47,
+  lateNights: 364,
   cafesVisited: 23,
   placesVisited: 12,
   burntToast: 5,
@@ -478,56 +479,56 @@ const stats = {
 const memoryPhotos = {
   lateNights: [
     {
-      url: "https://images.unsplash.com/photo-1765615202063-035f075ab79b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmcmllbmRzJTIwbGF1Z2hpbmclMjBuaWdodCUyMHBhcnR5fGVufDF8fHx8MTc3MzE2NjM0Nnww&ixlib=rb-4.1.0&q=80&w=1080",
-      caption: "2 AM PIZZA RUN",
+      url: "https://files.catbox.moe/dafhf1.jpg",
+      caption: "Yuh!",
     },
     {
-      url: "https://images.unsplash.com/photo-1528394503539-7a924cf9561c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjaXR5JTIwbGlnaHRzJTIwbmlnaHRsaWZlJTIwZnJpZW5kc3xlbnwxfHx8fDE3NzMxNjYzNDl8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      caption: "CITY LIGHTS",
+      url: "https://files.catbox.moe/nfirck.jpg",
+      caption: "looking cute!",
     },
     {
-      url: "https://ih1.redbubble.net/image.6000092791.6675/bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg",
-      caption: "wtf?",
+      url: "https://files.catbox.moe/yq84eo.jpg",
+      caption: "When was this?",
     },
     {
-      url: "https://images.unsplash.com/photo-1558008258-3256797b43f3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      caption: "NIGHT CRAWLERS",
+      url: "https://files.catbox.moe/sio9um.jpg",
+      caption: "Ivan's!",
     },
   ],
   cafes: [
     {
-      url: "https://images.unsplash.com/photo-1604145703889-5c58d94ee681?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2ZmZWUlMjBzaG9wJTIwYWVzdGhldGljJTIwbGF0dGV8ZW58MXx8fHwxNzczMTY2MzQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      caption: "MATCHA MADNESS",
+      url: "https://files.catbox.moe/vpx5bx.jpg",
+      caption: "Cere Tea!",
     },
     {
-      url: "https://images.unsplash.com/photo-1666455620767-63912e869a47?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx5b3VuZyUyMHdvbWVuJTIwZnJpZW5kcyUyMHN1bnNldHxlbnwxfHx8fDE3NzMxNjYzNDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
-      caption: "SUNSET SIPS",
+      url: "https://files.catbox.moe/yn1anx.jpg",
+      caption: "Best Latte Ever",
     },
     {
-      url: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      caption: "MORNING FIX",
+      url: "https://files.catbox.moe/t93ge4.jpeg",
+      caption: "How many times now?",
     },
     {
-      url: "https://images.unsplash.com/photo-1525625293386-3f8f99389edd?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      caption: "CAFFEINE DRIP",
+      url: "https://files.catbox.moe/foqnsg.jpg",
+      caption: "Rok with ben",
     },
   ],
   places: [
     {
-      url: "https://images.unsplash.com/photo-1673505413397-0cd0dc4f5854?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx0cmF2ZWwlMjBhZHZlbnR1cmUlMjBtb3VudGFpbnMlMjBzY2VuaWN8ZW58MXx8fHwxNzczMTY2MzQ3fDA&ixlib=rb-4.1.0&q=80&w=1080",
-      caption: "MOUNTAIN HIGH",
+      url: "https://files.catbox.moe/1ilrjo.jpg",
+      caption: "Disneyland",
     },
     {
-      url: "https://images.unsplash.com/photo-1772203120950-a02082958489?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxiZWFjaCUyMHZhY2F0aW9uJTIwdHJvcGljYWwlMjBmcmllbmRzfGVufDF8fHx8MTc3MzE2NjM0OXww&ixlib=rb-4.1.0&q=80&w=1080",
-      caption: "BEACH BUMS",
+      url: "https://files.catbox.moe/ga2z7y.jpg",
+      caption: "Beach day!",
     },
     {
-      url: "https://images.unsplash.com/photo-1527631746610-bca00a040d60?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      caption: "ROADTRIPPIN",
+      url: "https://files.catbox.moe/tyypsc.jpg",
+      caption: "Catalina",
     },
     {
-      url: "https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
-      caption: "LOST & FOUND",
+      url: "https://files.catbox.moe/57tola.jpg",
+      caption: "SF (again...)",
     },
   ],
   food: [
@@ -536,7 +537,7 @@ const memoryPhotos = {
       caption: "BURNT TOAST",
     },
     {
-      url: "https://raw.githubusercontent.com/benyaminha/Stephify-Wrapped-Photo-Links/main/Spilled%20boba.jpg",
+      url: "https://files.catbox.moe/6p5nsp.jpg",
       caption: "SPILLED BOBA",
     },
   ],
@@ -754,8 +755,7 @@ export function BirthdayWrapped() {
               is ready
             </h2>
             <p className="text-xs text-[#252424]/80 font-bold tracking-widest uppercase mt-6">
-              And it's got some stuff from before this year
-              too...
+              Let's see what you did this year!
             </p>
           </motion.div>
 
@@ -840,7 +840,7 @@ export function BirthdayWrapped() {
             className="mt-16 text-center z-30 pointer-events-none"
           >
             <h2 className="text-[28px] font-black tracking-tight text-[#252424]">
-              This year you spent:
+              This year you took:
             </h2>
           </motion.div>
 
@@ -862,10 +862,10 @@ export function BirthdayWrapped() {
 
             <div className="mt-12 text-center flex flex-col items-center gap-2">
               <p className="text-[15px] font-medium text-[#252424]">
-                Late nights with friends!
+                BeReals!
               </p>
               <p className="text-[15px] font-medium text-[#252424]">
-                Are you getting enough sleep???
+                Just missed that one day...
               </p>
             </div>
           </motion.div>
@@ -886,7 +886,7 @@ export function BirthdayWrapped() {
                   key={index}
                   url={photo.url}
                   caption={photo.caption}
-                  from="Layla"
+                  from=""
                   index={index}
                   initialRotate={pos.rotate}
                   className="w-[8.05rem]"
@@ -942,6 +942,11 @@ export function BirthdayWrapped() {
           </motion.div>
         </div>
       ),
+    },
+    // Video Slide
+    {
+      id: 1.5,
+      component: <VideoSlide />,
     },
     // Stat 2: Cafes Visited (Brutalist Style)
     {
@@ -1007,7 +1012,7 @@ export function BirthdayWrapped() {
                   key={index}
                   url={photo.url}
                   caption={photo.caption}
-                  from="Layla"
+                  from=""
                   index={index}
                   initialRotate={pos.rotate}
                   className="w-[8.05rem]"
@@ -1045,7 +1050,7 @@ export function BirthdayWrapped() {
             animate={{ x: 0 }}
             className="absolute top-24 -left-4 bg-[#d1ff27] text-black px-12 py-4 font-black text-2xl uppercase tracking-widest rotate-[-5deg] border-4 border-black z-30 pointer-events-none shadow-[8px_8px_0px_0px_#000]"
           >
-            Some stats from layla!
+            Some food stats!
           </motion.div>
 
           <motion.div
@@ -1090,7 +1095,7 @@ export function BirthdayWrapped() {
                   key={index}
                   url={photo.url}
                   caption={photo.caption}
-                  from="Layla"
+                  from=""
                   index={index}
                   initialRotate={pos.rotate}
                   className="w-[11.5rem]"
@@ -1140,6 +1145,7 @@ export function BirthdayWrapped() {
       component: <ArtistAudioSlide />,
     },
     // Final Screenshot Slide
+    // Final Screenshot Slide
     {
       id: 11,
       component: (
@@ -1169,56 +1175,68 @@ export function BirthdayWrapped() {
             />
           ))}
 
-          {/* Floating Balloons */}
-          {Array.from({ length: 15 }).map((_, i) => (
-            <motion.div
-              key={`balloon-${i}`}
-              initial={{ y: "100vh", x: `${Math.random() * 100}%` }}
-              animate={{ y: "-20vh" }}
-              transition={{
-                duration: 4 + Math.random() * 3,
-                ease: "easeOut",
-                delay: Math.random() * 0.5,
-              }}
-              className="absolute w-12 h-16 rounded-[50%] z-10"
-              style={{
-                backgroundColor: ["#ff4633", "#d1ff27", "#8b8aff", "#000", "#fff"][i % 5],
-                border: "4px solid #000",
-                boxShadow: "4px 4px 0px 0px rgba(0,0,0,1)",
-              }}
-            >
-              {/* Balloon string */}
-              <div className="absolute top-full left-1/2 w-0.5 h-16 bg-black -translate-x-1/2"></div>
-            </motion.div>
-          ))}
+          
 
-          {/* Floating Polaroids Background */}
-          <div className="absolute inset-0 pointer-events-none z-10 flex items-center overflow-hidden w-full h-full opacity-60">
-            <motion.div
-              animate={{ x: [0, "-50%"] }}
-              transition={{ repeat: Infinity, duration: 25, ease: "linear" }}
-              className="flex gap-16 shrink-0"
-              style={{ width: "fit-content" }}
-            >
-              {[...Array(20)].map((_, i) => {
-                const photos = [
-                  "https://images.unsplash.com/photo-1541532713592-79a0317b6b77?auto=format&fit=crop&q=80&w=400",
-                  "https://images.unsplash.com/photo-1606983340126-99ab4feaa64a?auto=format&fit=crop&q=80&w=400",
-                  "https://images.unsplash.com/photo-1735845735730-88451aaea9f1?auto=format&fit=crop&q=80&w=400"
-                ];
+          {/* Scattered Polaroids Background */}
+          <div className="absolute inset-0 pointer-events-none z-10 w-full h-full opacity-60">
+            {(() => {
+              const photos = [
+                "https://files.catbox.moe/vw6cz5.jpg", "https://files.catbox.moe/zxa7kv.jpg",
+                "https://files.catbox.moe/ysnmac.jpg", "https://files.catbox.moe/qfyf4g.jpg",
+                "https://files.catbox.moe/qfyf4g.jpg", "https://files.catbox.moe/9ytsv2.jpg",
+                "https://files.catbox.moe/9ytsv2.jpg", "https://files.catbox.moe/sdxx3w.jpg",
+                "https://files.catbox.moe/uznn01.jpg", "https://files.catbox.moe/uznn01.jpg",
+                "https://files.catbox.moe/h0rrcy.jpg", "https://files.catbox.moe/r3840q.jpg",
+                "https://files.catbox.moe/y7udpw.jpg", "https://files.catbox.moe/k94t28.jpg",
+                "https://files.catbox.moe/y3u3tl.jpg", "https://files.catbox.moe/bhuowa.jpg",
+                "https://files.catbox.moe/5y05yz.jpg", "https://files.catbox.moe/5y05yz.jpg",
+                "https://files.catbox.moe/jpvrmh.jpg", "https://files.catbox.moe/nkrqy6.jpg",
+                "https://files.catbox.moe/s8qcxj.jpg", "https://files.catbox.moe/bu97r8.jpg",
+                "https://files.catbox.moe/hnw11m.jpeg", "https://files.catbox.moe/9nwsud.jpeg",
+                "https://files.catbox.moe/uxzqjo.jpeg", "https://files.catbox.moe/3hpkrx.jpeg",
+                "https://files.catbox.moe/v8grbq.jpeg", "https://files.catbox.moe/ai09du.jpeg",
+                "https://files.catbox.moe/ngiyrq.jpeg", "https://files.catbox.moe/5am0v2.jpeg",
+                "https://files.catbox.moe/xw7smc.jpeg", "https://files.catbox.moe/b8g0sw.jpeg",
+                "https://files.catbox.moe/mgycik.jpeg", "https://files.catbox.moe/h08a6u.jpeg",
+                "https://files.catbox.moe/hwh5es.jpeg", "https://files.catbox.moe/2okaea.jpeg",
+                "https://files.catbox.moe/nfirck.jpg", "https://files.catbox.moe/nfirck.jpg",
+                "https://files.catbox.moe/nfirck.jpg", "https://files.catbox.moe/yq84eo.jpg",
+                "https://files.catbox.moe/m3ta91.jpg", "https://files.catbox.moe/sio9um.jpg",
+                "https://files.catbox.moe/sio9um.jpg", "https://files.catbox.moe/6xaryg.jpg",
+                "https://files.catbox.moe/rpbm4e.jpg", "https://files.catbox.moe/rpbm4e.jpg",
+              ];
+
+              return photos.map((url, i) => {
+                // Pseudo-random placement logic so they scatter across the screen evenly
+                const leftPos = `${(i * 27) % 85}%`; // Scatters X axis between 0% and 85%
+                const topPos = `${(i * 31) % 80}%`;  // Scatters Y axis between 0% and 80%
+                const rotation = `${(i % 2 === 0 ? 1 : -1) * ((i * 13) % 45)}deg`; // Random tilt up to 45deg
+                const popInDelay = (i * 0.1) % 2; // Staggers the pop-in animation
+
                 return (
-                  <div key={`float-pol-${i}`} className="shrink-0 flex items-center justify-center rotate-[15deg]">
+                  <motion.div
+                    key={`scatter-pol-${i}`}
+                    initial={{ opacity: 0, scale: 0, rotate: 0 }}
+                    animate={{ opacity: 1, scale: 1, rotate: rotation }}
+                    transition={{
+                      delay: popInDelay,
+                      type: "spring",
+                      bounce: 0.5,
+                    }}
+                    className="absolute"
+                    style={{ left: leftPos, top: topPos }}
+                  >
                     <Polaroid
-                      url={photos[i % photos.length]}
-                      caption={`Memory ${i + 1}`}
-                      from="Friends"
+                      url={url}
+                      caption={""}
+                      from=""
                       index={i}
-                      className="w-[180px] pointer-events-none shadow-[8px_8px_0px_0px_#252424] filter grayscale hover:grayscale-0 transition-all"
+                      className="w-[140px] md:w-[180px] pointer-events-none shadow-[8px_8px_0px_0px_#252424] filter grayscale hover:grayscale-0 transition-all"
                     />
-                  </div>
+                  </motion.div>
                 );
-              })}
-            </motion.div>
+              });
+            })()}
           </div>
 
           <motion.div
@@ -1227,7 +1245,7 @@ export function BirthdayWrapped() {
             transition={{ type: "spring", duration: 1.5, delay: 0.5 }}
             className="z-20 text-center w-full relative"
           >
-            <div className="bg-white border-8 border-black p-10 rotate-3 mx-auto max-w-[90%] relative shadow-[16px_16px_0px_0px_#ff4633]">
+            <div className="">
               <h1 
                 className="text-5xl md:text-6xl font-black uppercase leading-[1.1] mb-2 tracking-tighter text-[#ff4633] italic"
                 style={{
@@ -1247,9 +1265,9 @@ export function BirthdayWrapped() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 2 }}
-              className="mt-16 inline-block bg-black text-white px-8 py-4 font-black uppercase tracking-widest text-sm rounded-full border-4 border-black shadow-[8px_8px_0px_0px_#ff4633] z-30"
+              className=""
             >
-              Screenshot this moment 📸
+              
             </motion.div>
           </motion.div>
         </div>
