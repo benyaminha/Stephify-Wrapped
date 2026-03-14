@@ -20,10 +20,10 @@ const VIDEOS = [
     user: "@ladygagaofficial",
     caption: "For a special someone",
     videoUrl:
-      "https://cdn.discordapp.com/attachments/1286499284467847238/1482103506897866923/6cb40cfb0ccb480c8e3bfa9842900daa.mp4?ex=69b5bbf4&is=69b46a74&hm=28d000f8cd43f16dbdd2b8587dcb235ba5009ae4cefa70993551a16ffd0b9c82&",
-    likes: 2450,
-    comments: 12,
-    shares: 5,
+      "https://files.catbox.moe/f1j6nx.mp4",
+    likes: 9834,
+    comments: 243,
+    shares: 2309,
     song: "Bad Romance - Lady Gaga",
   },
   {
