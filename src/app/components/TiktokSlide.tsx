@@ -41,7 +41,7 @@ const VIDEOS = [
     id: 3,
     user: "@kristle",
     caption: "live streaming right now!!",
-    videoUrl: "https://files.catbox.moe/ffp3v2.mp4",
+    videoUrl: "https://files.catbox.moe/3fnoy3.mp4",
     likes: 1,
     comments: 2,
     shares: 0,
