@@ -1,11 +1,7 @@
+happy birthday steph!
 
-  # Stephify Wrapped
-
-  This is a code bundle for Stephify Wrapped. The original project is available at https://www.figma.com/design/6YuCYlwayeHgghILtc6Tpk/Stephify-Wrapped.
-
-  ## Running the code
-
-  Run `npm i` to install the dependencies.
-
-  Run `npm run dev` to start the development server.
+## known issues
+1. tiktok can't autoplay audio on certain browsers
+2. globe videos can stream incorrectly
+3. certain screen actions can skip the entire slide when it shouldn't
   
