@@ -106,14 +106,14 @@ const EMAILS_DATA = [
     sender: "Isabelle",
     title: "From LA!",
     videoUrl:
-      "https://files.catbox.moe/tkysj3.mp4",
+      "https://files.catbox.moe/ow6l6c.mp4",
   },
   {
     id: 6,
     sender: "Veronica",
     title: "Happy Birthday Steph!",
     videoUrl:
-      "https://files.catbox.moe/tkysj3.mp4",
+      "https://files.catbox.moe/2pnvbh.mp4",
   },
   
   
