@@ -178,9 +178,9 @@ export function BoardGameSlide() {
 
             {/* Animated Polaroids */}
             <Polaroid
-              url="https://images.unsplash.com/photo-1611891487122-2075b925d57b?auto=format&fit=crop&q=80&w=400"
-              caption="GAME NIGHT"
-              from="Layla"
+              url="https://files.catbox.moe/5xirtt.jpg"
+              caption="azul"
+              from=""
               className="w-32"
               style={{ bottom: "5%", left: "5%" }}
               initialRotate={-10}
@@ -188,9 +188,9 @@ export function BoardGameSlide() {
             />
 
             <Polaroid
-              url="https://images.unsplash.com/photo-1605806616949-1e87b487cb2a?auto=format&fit=crop&q=80&w=400"
-              caption="HIGH ROLLER"
-              from="Layla"
+              url="https://files.catbox.moe/9f9c10.JPG"
+              caption="steph n jeff"
+              from=""
               className="w-36"
               style={{ top: "10%", right: "2%" }}
               initialRotate={15}

@@ -66,11 +66,13 @@ export function VideoSlide({
         <div className="relative w-full border-4 border-black bg-black shadow-[12px_12px_0px_0px_#252424] overflow-hidden rounded-2xl">
           <video
             src={videoUrl}
+            onClick={(e) => {
+            // 1. THIS IS THE MAGIC LINE: It stops the click from advancing the slide
+              e.stopPropagation();
+            }}
             className="w-full h-auto block"
             controls
-            playsInline
             autoPlay
-            muted
             loop
           />
         </div>
