@@ -755,7 +755,7 @@ export function BirthdayWrapped() {
               is ready
             </h2>
             <p className="text-xs text-[#252424]/80 font-bold tracking-widest uppercase mt-6">
-              Let's see what you did this year!
+              Let's see what you did this year! (tap to proceed)
             </p>
           </motion.div>
 
