@@ -30,7 +30,7 @@ const CARDS_DATA = [
     name: "Ivan Bird",
     subtitle: "",
     videoUrl:
-      "https://files.catbox.moe/hjgtpf.mp4",
+      "https://files.catbox.moe/poy84o.mp4",
     action:
       "Round End: Get a free ride home",
     flavorText: "Fun Fact: 19 BBQ nights!",
