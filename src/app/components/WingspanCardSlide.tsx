@@ -95,7 +95,7 @@ export function WingspanCardSlide() {
           >
             <div className="bg-white border-[4px] border-black p-4 shadow-[6px_6px_0px_0px_#000] rotate-[-2deg] inline-block">
               <h2 className="text-2xl md:text-3xl font-black uppercase tracking-tighter text-black leading-[1]">
-                Nice roll! <br /> Draw end your turn
+                Nice roll! <br /> Now draw from the deck!
               </h2>
             </div>
           </motion.div>
