@@ -47,8 +47,7 @@ const VIDEOS = [
     shares: 0,
     song: "Original Sound - Kristle",
   },
-];
-{
+  {
     id: 4,
     user: "@h7mmus",
     caption: "yuh!",
