@@ -51,7 +51,7 @@ const VIDEOS = [
     id: 4,
     user: "@h7mmus",
     caption: "yuh!",
-    videoUrl: "https://files.catbox.moe/tbb0fb.mp4",
+    videoUrl: "https://files.catbox.moe/hg6jbs.mp4",
     likes: 0,
     comments: 0,
     shares: 7623,
